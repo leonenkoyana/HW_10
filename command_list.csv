@@ -1,0 +1,26 @@
+    1  history
+    2  git config --global user.name "Yana Leonenko"\n
+    3  git config --global user.email "leonenkoyana@ukr.net"
+    4  git clone https://github.com/leonenkoyana/HW_10.git
+    5  cd HW_10
+    6  pwd
+    7  touch text_ignore.txt
+    8  nano .gitignore
+    9  git status
+   10  git add .
+   11  git commit -m "gitignore modified"
+   12  touch main_test.txt
+   13  git add .
+   14  git commit -m "main test added"
+   15  git branch develop
+   16  git checkout develop
+   17  touch develop_test.txt
+   18  git add .
+   19  git commit -m "develop_test added"
+   20  nano develop_test.txt
+   21  git status
+   22  git add .
+   23  git commit -m "develop_test modified"
+   24  git checkout main 
+   25  git merge develop
+   26  git log
